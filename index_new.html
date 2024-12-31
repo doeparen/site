@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginnerskov Academic Portfolio</title>
+    <style>
+        :root {
+            --main-bg-color: #f8f9fa;
+            --main-text-color: #212529;
+            --header-bg-color: #343a40;
+            --header-text-color: #ffffff;
+            --accent-color: #007bff;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--header-bg-color);
+            color: var(--header-text-color);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--accent-color);
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: var(--header-text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            display: none;
+        }
+
+        .profile img {
+            float: left;
+            margin-right: 1rem;
+            border-radius: 0.5rem;
+            max-width: 150px;
+            height: auto;
+        }
+
+        .profile h2 {
+            color: var(--accent-color);
+        }
+
+        .profile p {
+            clear: both;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: var(--header-bg-color);
+            color: var(--header-text-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0.5rem;
+            background: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Academic Portfolio of the Ginnerskovs</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('josef')">Josef Ginnerskov</a>
+        <a href="#" onclick="showSection('mette')">Mette Ginnerskov-Dahlberg</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h2>About This Portfolio</h2>
+        <p>Welcome to the academic portfolio of Josef Ginnerskov and Mette Ginnerskov-Dahlberg. Explore their profiles, latest publications, and research contributions.</p>
+    </div>
+
+    <div id="josef" class="container profile">
+        <img src="josef.jpeg" alt="Josef Ginnerskov">
+        <h2>Josef Ginnerskov</h2>
+        <p>Josef Ginnerskov is a postdoctoral researcher in analytical sociology and a junior fellow at The Swedish Excellence Centre for Computational Social Science (SweCSS) at Linköping University.</p>
+        <p><strong>Latest Publications:</strong></p>
+        <ul>
+            <li>(2024) Quest for Sociology: Revisiting Prevailing Understandings of a Discipline with Computational Text Analyses of Dissertations. <a href="https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1829272&dswid=-2572#:~:text=UUThesis_J%2DGinnerskov%2D2024" target="_blank">Read Book</a></li>
+            <li>(2021) When Baehr met Steffen. Appraising classicality through the lens of neglect. <a href="https://journals.sagepub.com/home/asj" target="_blank">Read Article</a></li>
+        </ul>
+    </div>
+
+    <div id="mette" class="container profile">
+        <img src="mette.jpeg" alt="Mette Ginnerskov-Dahlberg">
+        <h2>Mette Ginnerskov-Dahlberg</h2>
+        <p>Mette Ginnerskov-Dahlberg is Associate Professor (docent) in Sociology of Education at Uppsala University. She specializes in the lived experience of migration and the labour market integration of student migrants.</p>
+        <p><strong>Latest Publications:</strong></p>
+        <ul>
+            <li>(2024) Towards a safe haven: Students from post‐Soviet countries pursuing education in Sweden during the COVID‐19 pandemic. <a href="https://doi.org/10.1002/psp.2833" target="_blank">Read Article</a></li>
+            <li>(2024) Unpredictable Mobilities: How international students navigate the ambiguous terrain between political constraints and their everyday aspirations for a desirable life. <a href="https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-500759" target="_blank">Read Chapter</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2024 Ginnerskov Academic Portfolio
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.container').forEach(container => {
+                container.style.display = 'none';
+            });
+
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show home by default
+        showSection('home');
+    </script>
+</body>
+</html>
