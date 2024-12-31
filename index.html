@@ -1,90 +1,118 @@
 <html>
-    <head>
+<head>
     <title>Ginnerskov</title>
     <style type="text/css">
-    
-    body {
-        font-size: 14px;
-        font-family: "Andale Mono", monospace;
-        color: #0a0709;
-        background-color: #3c4442;
-        padding-top:20px;
-    }
-    
-    h1 {
-        text-align: center;
-        text-transform: lowercase;
-        font-family: "Andale Mono", monospace;
-        color:#eeb5b5;
-        font-style:italic;
-        font-size:30px;
-        letter-spacing:1.2px;
-    }
-    
-    a {
-        color: #cabea6;
-        font-weight:bold;
-        text-decoration: none;
-    }
-    
-    p {
-        margin-bottom:25px;
-        text-align:justify;
-    }
-    
-    .content {
-        width:80%;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        border:3px solid #e28f8f;
-        margin:0 auto;
-        padding:40px;	
-        background-color:#f0e5e5;
-    }
-    
-    img.about1 {
-        width:120px;
-        float:left;
-        padding:10px;
-    }
-    img.about2 {
-        width:140px;
-        float:right;
-        padding:10px;
-    }
+        body {
+            font-size: 14px;
+            font-family: "Andale Mono", monospace;
+            color: #0a0709;
+            background-color: #3c4442;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: lowercase;
+            font-family: "Andale Mono", monospace;
+            color: #eeb5b5;
+            font-style: italic;
+            font-size: 30px;
+            letter-spacing: 1.2px;
+        }
+
+        button {
+            font-size: 16px;
+            font-family: "Andale Mono", monospace;
+            color: #ffffff;
+            background-color: #e28f8f;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #c97a7a;
+        }
+
+        .content {
+            width: 80%;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            border: 3px solid #e28f8f;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f0e5e5;
+            text-align: justify;
+        }
+
+        img.about1, img.about2 {
+            width: 120px;
+            float: left;
+            padding: 10px;
+        }
     </style>
-    </head>
-    
-    <body>
- 
-    <h1>josef ginnerskov</h1>
-    
-    <div class="content">
-    <img src="josef.jpeg" class="about1">
+</head>
 
-    <p>Josef Ginnerskov is a doctoral candidate in sociology at Uppsala University in Sweden. Josef's main interest lies within the sociology of knowledge and ranges from classicality to computational social science. His dissertation project is an examination of whether common disciplinary notions of sociological knowledge can be mapped out in digitised corpora with the help of text mining methodology.</p>
-    <p>Latest publications:</p>
-    <p></p>
-    <p>(2021) When Baehr met Steffen. Appraising classicality through the lens of neglect. <em>ACTA SOCIOLOGICA</em> <a href="https://journals.sagepub.com/home/asj">read_article</a></p>
+<body>
+    <div id="home">
+        <h1>Welcome to the academic home of the Ginnerskovs</h1>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <button onclick="showJosef()">josef ginnerskov</button>
+        <button onclick="showMette()">mette ginnerskov-dahlberg</button>
     </div>
-    
-    </body>
-    <body>
-    
-    <h1>mette ginnerskov-dahlberg</h1>
-        
-    <div class="content">
-    <img src="mette.jpeg" class="about2">
 
-    <p>Mette Ginnerskov-Dahlberg is researcher in Sociology of Education at Uppsala University. She is an anthropologist by training and holds a PhD degree in European Studies from Aarhus University. Her work focuses on student flow from Eastern to Western Europe. Specializing in ethnography with a longitudinal methodology, she is particular interested in the lived experience of migration, the link between geographical and social mobility, and the labour market integration of student migrants</p>
-    <p></p>
-    <p>Latest publications:</p>
-    <p>(2021) In search of a ‘normal place’. The geographical imaginaries of Eastern European students in Denmark. <em>GLOBALISATION, SOCIETIES AND EDUCATION</em> <a href="https://doi.org/10.1080/14767724.2021.1954495">read_article</a></p>
-    <p>(2021) <em>Student migration from Eastern to Western Europe</em>. ROUTLEDGE STUDIES IN DEVELOPMENT, MOBILITIES AND MIGRATION <a href="https://www.routledge.com/Student-Migration-from-Eastern-to-Western-Europe/Ginnerskov-Dahlberg/p/book/9780367520731">read_book</a></p>
+    <div id="josef" style="display: none;">
+        <h1>josef ginnerskov</h1>
+        <div class="content">
+            <img src="josef.jpeg" class="about1">
+            <p>Josef Ginnerskov is a postdoctoral researcher in analytical sociology and a junior fellow at The Swedish Excellence Centre for Computational Social Science (SweCSS) at Linköping University. His research examines the evolution of institutionalized knowledge and values, using computational techniques to model these complex social processes.
+
+Ginnerskov holds a PhD in sociology from Uppsala University, where he studied the existence of Kuhnian paradigms by analyzing extensive corpora of doctoral dissertations. Combining computational methods with the philosophy of science, his work offered new perspectives on how disciplinary thought develops and changes over time. Currently, Ginnerskov continues to explore the intersection of sociological inquiry and data-driven approaches, focusing on how beliefs about truth shape—and are shaped by—society.</p>
+            <p>Latest publications:</p>
+            <p></p>
+            <p>(2024) Quest for Sociology: Revisiting Prevailing Understandings of a Discipline with Computational Text Analyses of Dissertations. <em>STUDIA SOCIOLOGICA UPSALIENSIA</em> <a href="https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1829272&dswid=-2572#:~:text=UUThesis_J%2DGinnerskov%2D2024">read_book</a></p>
+            <p>(2021) When Baehr met Steffen. Appraising classicality through the lens of neglect. <em>ACTA SOCIOLOGICA</em> <a href="https://journals.sagepub.com/home/asj">read_article</a></p>
+        </div>
+        <button onclick="goHome()">back to home</button>
     </div>
-        
-    </body>
 
+    <div id="mette" style="display: none;">
+        <h1>mette ginnerskov-dahlberg</h1>
+        <div class="content">
+            <img src="mette.jpeg" class="about2">
+            <p>Mette Ginnerskov-Dahlberg is Associate Professor (docent) in Sociology of Education at Uppsala University. She is an anthropologist by training and holds a PhD in European Studies from Aarhus University. Ginnerskov-Dahlberg's work focuses on student flow from Eastern to Western Europe. Specializing in ethnography with a longitudinal methodology, she is particularly interested in the lived experience of migration, the link between geographical and social mobility, and the labour market integration of student migrants.</p>
+            <p>Latest publications:</p>
+            <p>(2024) Towards a safe haven: Students from post‐Soviet countries pursuing education in Sweden during the COVID‐19 pandemic. <em>POPULATION, SPACE and PLACE</em> <a href="https://doi.org/10.1002/psp.2833">read_article</a></p>
+            <p>(2024) Unpredictable Mobilities: How international students navigate the ambigious terrain between political constraints and their everyday aspirations for a desirable life. <em> INTERNATIONALIZATION IN HIGHER EDUCATION AND RESEARCH: PERSPECTIVES, OBSTACLES AND ALTERNATIVES</em> <a href="https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-500759">read_chapter</a></p>
+        </div>
+        <button onclick="goHome()">back to home</button>
+    </div>
 
-    </html>
+    <script>
+        function showJosef() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('josef').style.display = 'block';
+        }
+
+        function showMette() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('mette').style.display = 'block';
+        }
+
+        function goHome() {
+            document.getElementById('home').style.display = 'block';
+            document.getElementById('josef').style.display = 'none';
+            document.getElementById('mette').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
