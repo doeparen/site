@@ -1,118 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Ginnerskov</title>
-    <style type="text/css">
-        body {
-            font-size: 14px;
-            font-family: "Andale Mono", monospace;
-            color: #0a0709;
-            background-color: #3c4442;
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            text-align: center;
-            text-transform: lowercase;
-            font-family: "Andale Mono", monospace;
-            color: #eeb5b5;
-            font-style: italic;
-            font-size: 30px;
-            letter-spacing: 1.2px;
-        }
-
-        button {
-            font-size: 16px;
-            font-family: "Andale Mono", monospace;
-            color: #ffffff;
-            background-color: #e28f8f;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: #c97a7a;
-        }
-
-        .content {
-            width: 80%;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            border: 3px solid #e28f8f;
-            margin: 0 auto;
-            padding: 40px;
-            background-color: #f0e5e5;
-            text-align: justify;
-        }
-
-        img.about1, img.about2 {
-            width: 120px;
-            float: left;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ginnerskov</title>
+  <meta name="description" content="The academic home of Josef Ginnerskov and Mette Ginnerskov-Dahlberg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
-
 <body>
-    <div id="home">
-        <h1>Welcome to the academic home of the Ginnerskovs</h1>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <button onclick="showJosef()">josef ginnerskov</button>
-        <button onclick="showMette()">mette ginnerskov-dahlberg</button>
+  <div class="landing">
+    <div class="wrap">
+      <header class="landing-head">
+        <p class="eyebrow prompt">ginnerskov.org</p>
+        <h1>The Ginnerskovs</h1>
+        <p class="lede">One Swede, one Dane, one academic home.</p>
+      </header>
+
+      <div class="people">
+        <a class="person-card p-josef" href="josef/">
+          <div class="photo"><img src="assets/josef.jpg" alt="Portrait of Josef Ginnerskov"></div>
+          <div class="body">
+            <h2>Josef Ginnerskov</h2>
+            <p class="role">Sociology of knowledge &amp;<br>computational social science</p>
+            <p class="affil">Linköping University</p>
+            <span class="go">View profile <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="person-card p-mette" href="mette/">
+          <div class="photo"><img src="assets/mette.jpg" alt="Portrait of Mette Ginnerskov-Dahlberg"></div>
+          <div class="body">
+            <h2>Mette Ginnerskov-Dahlberg</h2>
+            <p class="role">Sociology of education &amp;<br>migration studies</p>
+            <p class="affil">Uppsala University</p>
+            <span class="go">View profile <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
+
+      <p class="site-foot">© 2026 Josef Ginnerskov &amp; Mette Ginnerskov-Dahlberg</p>
     </div>
-
-    <div id="josef" style="display: none;">
-        <h1>josef ginnerskov</h1>
-        <div class="content">
-            <img src="josef.jpeg" class="about1">
-            <p>Josef Ginnerskov is a postdoctoral researcher in analytical sociology and a junior fellow at The Swedish Excellence Centre for Computational Social Science (SweCSS) at Linköping University. His research examines the evolution of institutionalized knowledge and values, using computational techniques to model these complex social processes.
-
-Ginnerskov holds a PhD in sociology from Uppsala University, where he studied the existence of Kuhnian paradigms by analyzing extensive corpora of doctoral dissertations. Combining computational methods with the philosophy of science, his work offered new perspectives on how disciplinary thought develops and changes over time. Currently, Ginnerskov continues to explore the intersection of sociological inquiry and data-driven approaches, focusing on how beliefs about truth shape—and are shaped by—society.</p>
-            <p>Latest publications:</p>
-            <p></p>
-            <p>(2024) Quest for Sociology: Revisiting Prevailing Understandings of a Discipline with Computational Text Analyses of Dissertations. <em>STUDIA SOCIOLOGICA UPSALIENSIA</em> <a href="https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1829272&dswid=-2572#:~:text=UUThesis_J%2DGinnerskov%2D2024">read_book</a></p>
-            <p>(2021) When Baehr met Steffen. Appraising classicality through the lens of neglect. <em>ACTA SOCIOLOGICA</em> <a href="https://journals.sagepub.com/home/asj">read_article</a></p>
-        </div>
-        <button onclick="goHome()">back to home</button>
-    </div>
-
-    <div id="mette" style="display: none;">
-        <h1>mette ginnerskov-dahlberg</h1>
-        <div class="content">
-            <img src="mette.jpeg" class="about2">
-            <p>Mette Ginnerskov-Dahlberg is Associate Professor (docent) in Sociology of Education at Uppsala University. She is an anthropologist by training and holds a PhD in European Studies from Aarhus University. Ginnerskov-Dahlberg's work focuses on student flow from Eastern to Western Europe. Specializing in ethnography with a longitudinal methodology, she is particularly interested in the lived experience of migration, the link between geographical and social mobility, and the labour market integration of student migrants.</p>
-            <p>Latest publications:</p>
-            <p>(2024) Towards a safe haven: Students from post‐Soviet countries pursuing education in Sweden during the COVID‐19 pandemic. <em>POPULATION, SPACE and PLACE</em> <a href="https://doi.org/10.1002/psp.2833">read_article</a></p>
-            <p>(2024) Unpredictable Mobilities: How international students navigate the ambigious terrain between political constraints and their everyday aspirations for a desirable life. <em> INTERNATIONALIZATION IN HIGHER EDUCATION AND RESEARCH: PERSPECTIVES, OBSTACLES AND ALTERNATIVES</em> <a href="https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-500759">read_chapter</a></p>
-        </div>
-        <button onclick="goHome()">back to home</button>
-    </div>
-
-    <script>
-        function showJosef() {
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('josef').style.display = 'block';
-        }
-
-        function showMette() {
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('mette').style.display = 'block';
-        }
-
-        function goHome() {
-            document.getElementById('home').style.display = 'block';
-            document.getElementById('josef').style.display = 'none';
-            document.getElementById('mette').style.display = 'none';
-        }
-    </script>
+  </div>
 </body>
 </html>
